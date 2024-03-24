@@ -23,3 +23,14 @@ console.log(myIdealDay);
 // Question 51: Refactoring to Arrow Functions: Take a simple function that calculates the area 
 // of a rectangle and refactor it into an arrow function.
 
+function areaOfRectangle(length: number, width: number): number{
+    let area = length * width;
+    return area;
+}
+
+let area_of_rectangle = areaOfRectangle(24, 90);
+console.log(area_of_rectangle);
+
+let areaOfRectangleArrowFunc = (length: number, width: number): number => length*width;
+
+console.log(areaOfRectangleArrowFunc(20,34));
